@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="description" content="Le Registre — un outil Révéla, par DSP Avocats. Suivre l’exécution d’un accord : les engagements de chacun, les échéances, les preuves, et la lettre à envoyer si un engagement n’est pas tenu." />
+<meta name="robots" content="index, follow" />
+<meta name="theme-color" content="#F7F3EA" />
+<title>Le Registre — suivre l’exécution d’un accord · un outil Révéla</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 26'%3E%3Cpolyline points='13.00,13.00%2013.01,12.93%2013.04,12.86%2013.09,12.80%2013.15,12.76%2013.23,12.73%2013.32,12.71%2013.42,12.72%2013.52,12.76%2013.62,12.81%2013.71,12.89%2013.79,12.99%2013.86,13.11%2013.90,13.25%2013.92,13.40%2013.92,13.56%2013.89,13.73%2013.82,13.90%2013.73,14.07%2013.60,14.23%2013.44,14.37%2013.26,14.49%2013.05,14.58%2012.82,14.64%2012.57,14.67%2012.31,14.66%2012.05,14.61%2011.79,14.51%2011.53,14.38%2011.29,14.20%2011.08,13.98%2010.89,13.72%2010.74,13.43%2010.63,13.11%2010.57,12.77%2010.55,12.41%2010.59,12.05%2010.69,11.68%2010.84,11.33%2011.05,10.99%2011.31,10.67%2011.62,10.40%2011.98,10.16%2012.37,9.97%2012.80,9.84%2013.25,9.78%2013.72,9.77%2014.19,9.84%2014.66,9.98%2015.11,10.18%2015.54,10.46%2015.93,10.80%2016.28,11.20%2016.56,11.65%2016.79,12.15%2016.94,12.69%2017.02,13.25%2017.01,13.83%2016.92,14.41%2016.75,14.98%2016.49,15.53%2016.15,16.05%2015.73,16.52%2015.24,16.93%2014.69,17.28%2014.09,17.54%2013.45,17.72%2012.77,17.81%2012.08,17.80%2011.39,17.69%2010.72,17.48%2010.07,17.18%209.46,16.77%208.91,16.28%208.42,15.71%208.02,15.06%207.71,14.36%207.50,13.61%207.40,12.82%207.41,12.02%207.53,11.22%207.77,10.44%208.13,9.69%208.59,8.99%209.15,8.35%209.81,7.79%2010.55,7.33%2011.35,6.97%2012.21,6.72%2013.10,6.60%2014.01,6.61%2014.92,6.75%2015.82,7.02%2016.67,7.41%2017.47,7.93%2018.19,8.57%2018.83,9.30%2019.35,10.13%2019.76,11.03%2020.04,12.00%2020.19,13.00%2020.19,14.02%2020.04,15.05%2019.75,16.05%2019.31,17.01%2018.74,17.90%2018.04,18.71%2017.22,19.43%2016.31,20.02%2015.30,20.49%2014.24,20.81%2013.13,20.98%2011.99,20.99%2010.86,20.83%209.75,20.52%208.68,20.05%207.69,19.42%206.78,18.66%205.99,17.77%205.32,16.76%204.80,15.67%204.43,14.50%204.24,13.28%204.21,12.03%204.37,10.78%204.70,9.56%205.20,8.39%205.88,7.29%206.70,6.29%207.67,5.41%208.76,4.67%209.95,4.09%2011.22,3.68%2012.55,3.45%2013.91,3.41%2015.27,3.56%2016.60,3.91%2017.88,4.45%2019.08,5.16%2020.17,6.05%2021.14,7.09%2021.96,8.26%2022.60,9.54%2023.06,10.92%2023.33,12.35%2023.39,13.82%2023.24,15.29%2022.88,16.73%2022.32,18.12%2021.56,19.43%2020.62,20.62%2019.52,21.68%2018.26,22.57%2016.89,23.29%2015.41,23.80%2013.87,24.11%2012.30,24.19%2010.71,24.05%209.15,23.68%207.65,23.10%206.24,22.30' fill='none' stroke='%23B9924C' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+<style>
+:root { --paper:#F7F3EA; --sheet:#FBF8F1; --navy:#1B2A4A; --ink:#22283A; --gold:#B9924C; --gold-soft:#D8BC85; --line:#E3DACA; --muted:#6E6A5E;
+  --ok:#7FA36C; --mid:#C99A45; --hot:#C2584C;
+  --serif:"Cormorant Garamond", Garamond, "Times New Roman", serif; --sans:"DM Sans","Helvetica Neue",Arial,sans-serif;
+  color-scheme: light; }
+*,*::before,*::after { box-sizing:border-box; }
+html { -webkit-text-size-adjust:100%; }
+body { margin:0; background:var(--paper); color:var(--ink); font-family:var(--sans); font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px); }
+a { color:inherit; }
+button, input, select { font:inherit; color:inherit; }
+button { cursor:pointer; }
+[hidden] { display:none !important; }
+:focus-visible { outline:2px solid var(--gold); outline-offset:3px; }
+.app { max-width:680px; margin:0 auto; padding:0 20px; min-height:100vh; display:flex; flex-direction:column; }
+header.top { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:18px 0; border-bottom:1px solid var(--line); }
+.brand { display:inline-flex; align-items:center; gap:9px; color:var(--navy); text-decoration:none; }
+.brand svg { color:var(--gold); flex:none; }
+.brand span { font-family:var(--serif); font-size:22px; font-weight:600; letter-spacing:.08em; }
+nav.tabs { display:flex; gap:4px; }
+nav.tabs button { border:none; background:none; font-size:13.5px; color:var(--muted); padding:6px 8px; border-radius:8px; }
+nav.tabs button[aria-current="true"] { color:var(--navy); background:rgba(27,42,74,.07); font-weight:600; }
+main { flex:1; padding:28px 0 12px; }
+.screen { display:none; }
+.screen.on { display:block; animation:in .35s ease both; }
+@keyframes in { from { opacity:0; transform:translateY(6px); } to { opacity:1; transform:none; } }
+@media (prefers-reduced-motion: reduce) { .screen.on { animation:none; } }
+.kicker { font-size:12.5px; font-weight:600; color:var(--gold); letter-spacing:.06em; text-transform:uppercase; margin:0 0 10px; }
+h1 { font-family:var(--serif); font-weight:500; color:var(--navy); font-size:clamp(40px,9vw,58px); line-height:1.02; margin:0 0 18px; letter-spacing:-.01em; }
+h1 em { font-style:italic; font-weight:400; color:var(--gold); }
+h2 { font-family:var(--serif); font-weight:600; color:var(--navy); font-size:clamp(27px,6vw,34px); line-height:1.12; margin:0 0 10px; }
+h3 { font-family:var(--serif); font-weight:600; color:var(--navy); font-size:22px; line-height:1.2; margin:0 0 6px; }
+.lede { font-family:var(--serif); font-size:clamp(20px,4.6vw,23px); line-height:1.45; margin:0 0 22px; }
+.muted { color:var(--muted); }
+.small { font-size:14px; }
+p { margin:0 0 14px; }
+.btn { display:inline-flex; align-items:center; justify-content:center; gap:8px; border:1px solid var(--navy); background:transparent; border-radius:999px; padding:13px 24px; font-size:15.5px; font-weight:500; text-decoration:none; color:var(--navy); min-height:48px; }
+.btn.main { background:var(--navy); color:var(--sheet); }
+.btn.main:hover { background:#2A3D63; }
+.btn.main:disabled { background:#A7ADBA; border-color:#A7ADBA; cursor:not-allowed; }
+.btn.ghost:hover { background:rgba(27,42,74,.06); }
+.btn.sm { padding:8px 14px; min-height:36px; font-size:14px; }
+.btn.link { border:none; padding:8px 0; min-height:0; color:var(--muted); text-decoration:underline; text-underline-offset:3px; background:none; }
+.row { display:flex; gap:12px; flex-wrap:wrap; align-items:center; }
+.panel { background:var(--sheet); border:1px solid var(--line); border-radius:16px; padding:20px; margin:0 0 16px; }
+.duo { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin:22px 0 24px; }
+@media (max-width:560px) { .duo { grid-template-columns:1fr; } }
+.duo .panel { margin:0; }
+.duo h3 { font-size:20px; }
+.duo p { font-size:15px; margin:0; }
+.tag { display:inline-block; font-size:12.5px; font-weight:600; border-radius:999px; padding:3px 11px; color:#fff; background:var(--c,var(--navy)); }
+.tag.legal { --c:var(--navy); } .tag.lettre { --c:var(--gold); }
+
+/* Choix */
+.choices { display:grid; gap:10px; margin:0 0 20px; }
+.choice { display:block; width:100%; text-align:left; border:1px solid var(--line); background:var(--sheet); border-radius:14px; padding:16px 18px; min-height:58px; }
+.choice:hover { border-color:var(--gold); }
+.choice strong { display:block; font-weight:600; font-size:16.5px; color:var(--navy); }
+.choice span { display:block; font-size:14px; color:var(--muted); margin-top:2px; }
+.step-q { font-family:var(--serif); font-size:clamp(25px,5.8vw,31px); line-height:1.2; color:var(--navy); margin:0 0 18px; }
+
+/* Formulaire */
+label.f { display:block; margin:0 0 16px; }
+label.f > span { display:block; font-size:14.5px; font-weight:500; color:var(--navy); margin-bottom:5px; }
+label.f small { display:block; font-size:13px; color:var(--muted); margin-top:4px; }
+input[type=text], input[type=date], input[type=number], select { width:100%; border:1px solid var(--line); background:#fff; border-radius:10px; padding:11px 12px; font-size:16px; }
+input:focus, select:focus { outline:2px solid var(--gold-soft); border-color:var(--gold); }
+.dur { display:grid; grid-template-columns:110px 1fr; gap:10px; }
+.check { display:flex; gap:10px; align-items:flex-start; font-size:15px; margin:0 0 14px; cursor:pointer; }
+.check input { width:20px; height:20px; margin-top:2px; accent-color:var(--navy); flex:none; }
+.note { border-left:3px solid var(--gold); padding:4px 0 4px 14px; margin:0 0 18px; font-size:15px; }
+.note.hot { border-color:var(--hot); }
+
+/* Résultat du calcul */
+.result { border-radius:18px; padding:22px; margin:6px 0 18px; background:var(--navy); color:#F7F3EA; }
+.result .kicker { color:var(--gold-soft); margin-bottom:4px; }
+.result .big { font-family:var(--serif); font-size:clamp(30px,7vw,40px); line-height:1.1; font-weight:600; margin:0 0 6px; }
+.result .left { font-size:15px; color:#D3D7E0; margin:0; }
+.result .left strong { color:#fff; }
+.result.past { background:#6A2018; }
+.steps { list-style:none; padding:0; margin:0; counter-reset:s; }
+.steps li { counter-increment:s; position:relative; padding:0 0 12px 34px; font-size:15px; }
+.steps li::before { content:counter(s); position:absolute; left:0; top:0; width:24px; height:24px; border-radius:50%; border:1.5px solid var(--gold); color:var(--gold); font-size:13px; font-weight:600; display:flex; align-items:center; justify-content:center; }
+.steps li a { font-size:13px; color:var(--navy); }
+.safety { background:#FFF7E6; border:1px solid var(--gold-soft); border-radius:14px; padding:14px 16px; font-size:15px; margin:0 0 18px; }
+
+/* Relevé */
+.item { display:grid; grid-template-columns:auto 1fr; gap:4px 16px; align-items:start; background:#fff; border:1px solid var(--line); border-radius:16px; padding:16px 18px; margin:0 0 12px; }
+.item .cd { grid-row:span 3; text-align:center; min-width:74px; border-radius:12px; padding:8px 6px; background:var(--c); color:#fff; }
+.item .cd strong { display:block; font-family:var(--serif); font-size:30px; line-height:1; }
+.item .cd span { font-size:11.5px; }
+.item h3 { font-size:20px; margin:0; }
+.item .when { font-size:14.5px; margin:0; }
+.item .acts { display:flex; gap:12px; flex-wrap:wrap; }
+.empty { text-align:center; color:var(--muted); padding:30px 10px; }
+
+/* Repères */
+table.ref { width:100%; border-collapse:collapse; font-size:15px; margin:0 0 6px; }
+table.ref th { text-align:left; font-size:12.5px; color:var(--muted); font-weight:600; border-bottom:1px solid var(--line); padding:8px 8px 8px 0; }
+table.ref td { border-bottom:1px solid var(--line); padding:10px 8px 10px 0; vertical-align:top; }
+table.ref td.d { font-weight:600; color:var(--navy); white-space:nowrap; }
+table.ref a { font-size:13px; color:var(--navy); }
+@media (max-width:520px) { table.ref, table.ref tbody, table.ref tr, table.ref td { display:block; } table.ref thead { display:none; } table.ref tr { border-bottom:1px solid var(--line); padding:10px 0; } table.ref td { border:none; padding:2px 0; } }
+
+.cta { background:var(--navy); color:#F7F3EA; border-radius:18px; padding:24px 22px; margin:26px 0 16px; }
+.cta h3 { color:#F7F3EA; }
+.cta p { color:#D3D7E0; font-size:15px; }
+.cta .btn { background:var(--gold); border-color:var(--gold); color:var(--navy); font-weight:600; }
+.warn { font-size:13.5px; color:var(--muted); border-top:1px solid var(--line); padding-top:14px; margin-top:20px; }
+.next-links a { font-weight:600; color:var(--navy); }
+footer.foot { border-top:1px solid var(--line); padding:22px 0 34px; font-size:13.5px; color:var(--muted); }
+footer.foot .sig { font-family:var(--serif); font-style:italic; font-size:19px; color:var(--navy); margin:0 0 8px; }
+footer.foot p { margin:0 0 6px; }
+details.mentions { margin-top:10px; }
+details.mentions summary { cursor:pointer; color:var(--navy); font-weight:500; }
+details.mentions h4 { font-family:var(--serif); font-size:18px; color:var(--navy); margin:16px 0 4px; }
+details.mentions p { font-size:13.5px; }
+.print-only { display:none; }
+@media print {
+  @page { margin:16mm 14mm; }
+  body { background:#fff; font-size:11.5pt; }
+  .no-print, header.top, details.mentions, .item .acts { display:none !important; }
+  .print-only { display:block; }
+  .app { max-width:none; padding:0; }
+  .screen { display:none !important; }
+  .screen.on { display:block !important; animation:none; }
+  .item, .panel { break-inside:avoid; }
+  .item .cd, .result { -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+}
+.skip{position:absolute;left:-9999px;top:8px;z-index:30;background:var(--navy);color:#fff;padding:8px 16px;border-radius:999px;font-size:14px;text-decoration:none}.skip:focus{left:12px}
+
+/* Spécifique au Registre */
+.four { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:8px; margin:22px 0 24px; }
+@media (max-width:560px) { .four { grid-template-columns:1fr 1fr; } }
+.four div { background:var(--sheet); border:1px solid var(--line); border-radius:14px; padding:12px; }
+.four strong { display:block; font-family:var(--serif); font-size:20px; color:var(--navy); line-height:1.15; }
+.four span { font-size:13px; color:var(--muted); }
+.progress { display:flex; align-items:center; gap:12px; margin-bottom:18px; }
+.bar { flex:1; height:4px; background:var(--line); border-radius:4px; overflow:hidden; }
+.bar i { display:block; height:100%; background:var(--gold); transition:width .3s; }
+.count { font-size:13.5px; color:var(--muted); white-space:nowrap; }
+.grid2 { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+@media (max-width:520px) { .grid2 { grid-template-columns:1fr; } }
+textarea { width:100%; border:1px solid var(--line); background:#fff; border-radius:10px; padding:11px 12px; font-size:16px; min-height:70px; resize:vertical; font-family:inherit; line-height:1.55; }
+textarea:focus { outline:2px solid var(--gold-soft); border-color:var(--gold); }
+.chips { display:flex; flex-wrap:wrap; gap:6px; }
+.chip { border:1px solid var(--line); background:var(--sheet); border-radius:999px; padding:8px 14px; font-size:14.5px; min-height:40px; text-align:left; }
+.chip[aria-pressed="true"] { background:var(--navy); border-color:var(--navy); color:var(--sheet); }
+.chip.s { min-height:34px; padding:5px 12px; font-size:13.5px; }
+.eng { background:#fff; border:1px solid var(--line); border-radius:14px; padding:14px; margin:0 0 10px; }
+.eng .hd { display:flex; justify-content:space-between; align-items:center; gap:8px; margin-bottom:8px; }
+.eng .hd strong { font-size:14px; color:var(--muted); font-weight:500; }
+.eng .del { background:none; border:none; color:var(--muted); font-size:13.5px; text-decoration:underline; cursor:pointer; }
+.eng .row3 { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:10px; }
+@media (max-width:520px) { .eng .row3 { grid-template-columns:1fr; } }
+.sum { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; margin:0 0 14px; }
+.sum div { background:var(--sheet); border:1px solid var(--line); border-radius:12px; padding:10px; text-align:center; }
+.sum strong { display:block; font-family:var(--serif); font-size:26px; color:var(--navy); line-height:1.1; }
+.sum span { font-size:12.5px; color:var(--muted); }
+.sum .late strong { color:#9A2E22; }
+.money { font-size:14.5px; margin:0 0 6px; }
+.meter { height:8px; background:var(--line); border-radius:8px; overflow:hidden; margin:4px 0 14px; }
+.meter i { display:block; height:100%; background:#7FA36C; }
+.tl { position:relative; padding-left:22px; }
+.tl::before { content:""; position:absolute; left:7px; top:6px; bottom:6px; width:2px; background:var(--line); }
+.it { position:relative; background:#fff; border:1px solid var(--line); border-radius:14px; padding:14px; margin:0 0 12px; }
+.it::before { content:""; position:absolute; left:-21px; top:18px; width:12px; height:12px; border-radius:50%; background:var(--line); border:2px solid var(--paper,#F7F3EA); }
+.it.done::before { background:#7FA36C; } .it.late::before { background:#C9665A; } .it.soon::before { background:#D9B25F; }
+.it.late { border-color:#E7B7AF; }
+.it .top { display:flex; flex-wrap:wrap; gap:6px; align-items:center; margin-bottom:4px; }
+.it .date { font-size:13px; color:var(--muted); }
+.it h3 { font-size:19px; margin:2px 0 4px; }
+.badge { display:inline-block; font-size:11.5px; font-weight:600; letter-spacing:.04em; text-transform:uppercase; padding:3px 8px; border-radius:6px; background:#F3EEE2; color:var(--navy); }
+.badge.done { background:#E6F0E1; color:#2F5422; } .badge.late { background:#FBEAE7; color:#6A2018; } .badge.soon { background:#FFF4DE; color:#5A4108; } .badge.me { background:#E7ECF5; color:#22355E; }
+.it .act { margin-top:10px; display:flex; flex-wrap:wrap; gap:6px; align-items:center; }
+.it .pay { display:flex; gap:6px; align-items:center; flex-wrap:wrap; margin-top:8px; }
+.it .pay input { width:120px; } .it .pay input[type=date] { width:auto; }
+.it .proof { margin-top:8px; }
+.jr { margin:8px 0 0; padding:0; list-style:none; font-size:13.5px; }
+.jr li { border-top:1px dashed var(--line); padding:5px 0; }
+.jr li b { font-weight:600; color:var(--navy); margin-right:6px; }
+.jadd { display:flex; gap:6px; margin-top:6px; }
+.jadd input { flex:1; }
+.advice { font-size:14px; background:#FFF4DE; border:1px solid #E5C77F; border-radius:10px; padding:10px 12px; margin-top:8px; color:#5A4108; }
+.tools { display:flex; flex-wrap:wrap; gap:8px; margin:6px 0 0; }
+.letter { background:#fff; border:1px solid var(--line); border-radius:8px; padding:26px 24px; white-space:pre-wrap; font-size:15px; line-height:1.6; margin:0 0 14px; }
+.steps5 { margin:0; padding-left:20px; font-size:15px; } .steps5 li { margin-bottom:8px; }
+.law { border-top:1px solid var(--line); padding:12px 0; }
+.law:first-child { border-top:none; padding-top:0; }
+.law p { margin:0 0 4px; font-size:15px; }
+.law a { font-size:13.5px; color:var(--navy); }
+.toast { position:fixed; left:50%; bottom:24px; transform:translateX(-50%); background:var(--navy); color:#fff; padding:10px 18px; border-radius:999px; font-size:14px; z-index:9; }
+@media print {
+  .letter { border:none; padding:0; font-size:12pt; }
+  .it { break-inside:avoid; }
+  .badge, .meter i, .it::before { -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  footer.foot, .after, .no-print, .jadd, .pay, .act, .proof input { display:none !important; }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+<div class="app">
+<header class="top">
+  <a class="brand" href="https://dsp-avocats.fr/" aria-label="Révéla, par DSP Avocats"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><polyline points="13.00,13.00 13.01,12.93 13.04,12.86 13.09,12.80 13.15,12.76 13.23,12.73 13.32,12.71 13.42,12.72 13.52,12.76 13.62,12.81 13.71,12.89 13.79,12.99 13.86,13.11 13.90,13.25 13.92,13.40 13.92,13.56 13.89,13.73 13.82,13.90 13.73,14.07 13.60,14.23 13.44,14.37 13.26,14.49 13.05,14.58 12.82,14.64 12.57,14.67 12.31,14.66 12.05,14.61 11.79,14.51 11.53,14.38 11.29,14.20 11.08,13.98 10.89,13.72 10.74,13.43 10.63,13.11 10.57,12.77 10.55,12.41 10.59,12.05 10.69,11.68 10.84,11.33 11.05,10.99 11.31,10.67 11.62,10.40 11.98,10.16 12.37,9.97 12.80,9.84 13.25,9.78 13.72,9.77 14.19,9.84 14.66,9.98 15.11,10.18 15.54,10.46 15.93,10.80 16.28,11.20 16.56,11.65 16.79,12.15 16.94,12.69 17.02,13.25 17.01,13.83 16.92,14.41 16.75,14.98 16.49,15.53 16.15,16.05 15.73,16.52 15.24,16.93 14.69,17.28 14.09,17.54 13.45,17.72 12.77,17.81 12.08,17.80 11.39,17.69 10.72,17.48 10.07,17.18 9.46,16.77 8.91,16.28 8.42,15.71 8.02,15.06 7.71,14.36 7.50,13.61 7.40,12.82 7.41,12.02 7.53,11.22 7.77,10.44 8.13,9.69 8.59,8.99 9.15,8.35 9.81,7.79 10.55,7.33 11.35,6.97 12.21,6.72 13.10,6.60 14.01,6.61 14.92,6.75 15.82,7.02 16.67,7.41 17.47,7.93 18.19,8.57 18.83,9.30 19.35,10.13 19.76,11.03 20.04,12.00 20.19,13.00 20.19,14.02 20.04,15.05 19.75,16.05 19.31,17.01 18.74,17.90 18.04,18.71 17.22,19.43 16.31,20.02 15.30,20.49 14.24,20.81 13.13,20.98 11.99,20.99 10.86,20.83 9.75,20.52 8.68,20.05 7.69,19.42 6.78,18.66 5.99,17.77 5.32,16.76 4.80,15.67 4.43,14.50 4.24,13.28 4.21,12.03 4.37,10.78 4.70,9.56 5.20,8.39 5.88,7.29 6.70,6.29 7.67,5.41 8.76,4.67 9.95,4.09 11.22,3.68 12.55,3.45 13.91,3.41 15.27,3.56 16.60,3.91 17.88,4.45 19.08,5.16 20.17,6.05 21.14,7.09 21.96,8.26 22.60,9.54 23.06,10.92 23.33,12.35 23.39,13.82 23.24,15.29 22.88,16.73 22.32,18.12 21.56,19.43 20.62,20.62 19.52,21.68 18.26,22.57 16.89,23.29 15.41,23.80 13.87,24.11 12.30,24.19 10.71,24.05 9.15,23.68 7.65,23.10 6.24,22.30" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg><span>Révéla</span></a>
+  <span class="small muted">Le Registre</span>
+</header>
+
+<main id="main">
+<!-- Accueil -->
+<section class="screen on" id="s-intro" aria-labelledby="t-intro">
+  <p class="kicker">Un outil Révéla · Tenir</p>
+  <h1 id="t-intro">Le Registre<br><em>suivre l’exécution d’un accord</em></h1>
+  <p class="lede">Un accord signé n’est encore qu’une promesse. Il devient une solution le jour où chacun a fait ce qu’il avait dit.</p>
+  <p class="muted">Le Registre tient la liste des engagements de chacun et de leurs échéances, garde la trace de ce qui a été fait et des preuves, et vous alerte quand une date est passée. Si un engagement n’est pas tenu, il prépare la relance, puis la mise en demeure.</p>
+  <div class="four"><div><strong>Engagements</strong><span>les vôtres et les siens</span></div><div><strong>Échéances</strong><span>dans votre agenda</span></div><div><strong>Preuves</strong><span>un journal daté</span></div><div><strong>Relance</strong><span>puis mise en demeure</span></div></div>
+  <div class="row"><button class="btn main" id="btn-start">Créer mon registre</button><button class="btn ghost" id="btn-demo">Voir le registre d’Élise</button><button class="btn link" id="btn-last" hidden>Ouvrir mon registre</button></div>
+  <p class="small muted" style="margin-top:22px">Votre registre reste sur cet appareil. Pensez à le sauvegarder dans un fichier : il peut devenir une pièce utile si l’affaire revient devant un juge.</p>
+  <p class="small"><label class="btn link" style="cursor:pointer;font-size:14px">Importer une sauvegarde<input type="file" accept=".json,application/json" id="in-import" hidden /></label></p>
+</section>
+
+<!-- E1 l'accord -->
+<section class="screen" id="s-e1">
+  <div class="progress"><div class="bar"><i style="width:50%"></i></div><span class="count">Étape 1 sur 2</span></div>
+  <p class="kicker">L’accord</p>
+  <h2>Quel accord suivez-vous ?</h2>
+  <div class="panel">
+    <label class="f"><span>Intitulé</span><input type="text" data-f="titre" placeholder="Par exemple : protocole d’accord, chantier de cuisine" /></label>
+    <div class="grid2">
+      <label class="f"><span>Date de signature</span><input type="date" data-f="date" /></label>
+      <label class="f"><span>Votre nom</span><input type="text" data-f="moi" /></label>
+      <label class="f"><span>L’autre partie</span><input type="text" data-f="autre" /></label>
+      <label class="f"><span>Votre ville (pour les courriers)</span><input type="text" data-f="lieu" /></label>
+    </div>
+    <label class="f"><span>L’accord est-il exécutoire ?</span><div class="chips" data-k="exec"><button class="chip" data-v="oui">oui</button><button class="chip" data-v="non">non</button><button class="chip" data-v="nsp">je ne sais pas</button></div></label>
+    <p class="hint small muted" id="exec-info" style="margin:-4px 0 14px"></p>
+    <label class="f" style="margin:0"><span>Ce que prévoit l’accord en cas de manquement (facultatif)</span><textarea data-f="clause" placeholder="Recopiez la clause : pénalité, exigibilité immédiate, etc."></textarea></label>
+  </div>
+  <div class="row"><button class="btn main" data-go="e2">Continuer</button><button class="btn link" data-go="intro">Retour</button></div>
+</section>
+
+<!-- E2 engagements -->
+<section class="screen" id="s-e2">
+  <div class="progress"><div class="bar"><i style="width:100%"></i></div><span class="count">Étape 2 sur 2</span></div>
+  <p class="kicker">Les engagements</p>
+  <h2>Qui doit faire quoi, et pour quand ?</h2>
+  <p class="muted">Reprenez l’accord clause par clause. Un engagement par fiche : un paiement en deux fois, ce sont deux engagements. N’oubliez pas les vôtres.</p>
+  <div id="engs"></div>
+  <button class="btn sm ghost" id="btn-add">Ajouter un engagement</button>
+  <div class="row"><button class="btn main" id="btn-reg">Ouvrir le registre</button><button class="btn link" data-go="e1">Retour</button></div>
+</section>
+
+<!-- Registre -->
+<section class="screen" id="s-reg">
+  <p class="kicker" id="reg-kicker">Le registre</p>
+  <h2 id="reg-title" style="margin-bottom:4px">Mon registre</h2>
+  <p class="small muted" id="reg-meta" style="margin:0 0 14px"></p>
+  <div class="sum" id="sum"></div>
+  <div id="money"></div>
+  <div id="alert"></div>
+  <div class="tl" id="tl"></div>
+  <div class="tools no-print">
+    <button class="btn sm ghost" id="btn-ics">Ajouter les échéances à mon agenda</button>
+    <button class="btn sm ghost" id="btn-save">Sauvegarder dans un fichier</button>
+    <button class="btn sm ghost" id="btn-print">Imprimer le registre</button>
+    <button class="btn sm link" data-go="e2">Modifier les engagements</button>
+  </div>
+  <div class="after" style="margin-top:22px">
+    <div class="panel"><h3 style="font-size:20px">Si un engagement n’est pas tenu</h3><ol class="steps5" id="steps"></ol></div>
+    <div class="panel"><h3 style="font-size:20px">Ce que disent les textes</h3><div id="law"></div></div>
+    <p class="next-links small" id="links"></p>
+    <div class="cta no-print">
+      <h3>Faire exécuter votre accord</h3>
+      <p>Mise en demeure, exécution forcée, injonction de payer : un avocat peut prendre le relais dès que la relance amiable ne suffit plus. Le bilan amiable gratuit commence par là.</p>
+      <a class="btn" href="mailto:contact@dsp-avocats.fr?subject=Bilan%20amiable%20gratuit%20%E2%80%94%20Le%20Registre">Demander mon bilan amiable gratuit</a>
+    </div>
+    <p class="warn">Le Registre aide à suivre l’exécution d’un accord et à préparer des courriers. Il ne vérifie pas la validité de l’accord ni le bien-fondé d’une réclamation, et ne remplace pas l’analyse d’un avocat, notamment avant toute résolution de l’accord ou toute mesure d’exécution forcée.</p>
+  </div>
+</section>
+
+<!-- Lettre -->
+<section class="screen" id="s-lettre">
+  <p class="kicker no-print">Préparer un courrier</p>
+  <div class="panel no-print">
+    <label class="f"><span>Type de courrier</span><div class="chips" data-k="ltype"><button class="chip" data-v="relance">Relance amiable</button><button class="chip" data-v="med">Mise en demeure</button></div></label>
+    <label class="f"><span>Délai accordé</span><div class="chips" data-k="ldelai"><button class="chip" data-v="8">8 jours</button><button class="chip" data-v="15">15 jours</button><button class="chip" data-v="30">30 jours</button></div></label>
+    <label class="f" style="margin:0"><span>Engagements concernés</span><div id="l-items"></div></label>
+    <p class="small muted" id="l-info" style="margin:10px 0 0"></p>
+  </div>
+  <div class="letter" id="letter"></div>
+  <div class="row no-print"><button class="btn main" id="btn-lcopy">Copier le texte</button><button class="btn ghost" id="btn-lprint">Imprimer</button><button class="btn link" data-go="reg">Retour au registre</button></div>
+  <p class="small muted no-print">Relisez et adaptez ce brouillon. Une mise en demeure s’envoie par lettre recommandée avec demande d’avis de réception, ou par un commissaire de justice ; gardez-en une copie et la preuve d’envoi, et notez-la dans le registre.</p>
+</section>
+</main>
+
+<footer class="foot">
+  <p class="sig">Le droit existe lorsqu’on le révèle.</p>
+  <p>Révéla, par SELARL DSP Avocats, société d’avocats inscrite au Barreau de Nice. 8 bis rue Andrioli, Le Capitole V, 06000 Nice. <a href="mailto:contact@dsp-avocats.fr">contact@dsp-avocats.fr</a></p>
+  <p class="no-print"><button class="btn link" id="btn-erase" style="font-size:13.5px">Effacer mes données de cet appareil</button></p>
+  <details class="mentions" id="mentions-legales">
+    <summary>Mentions légales et confidentialité</summary>
+    <h4>Éditeur</h4>
+    <p>Le Registre est édité par la SELARL DSP Avocats, société d’avocats inscrite au Barreau de Nice, au capital de 402 euros, SIREN 978 376 234. Siège : 8 bis rue Andrioli, Le Capitole V, 06000 Nice. Téléphone : 04 93 97 66 66. Courriel : contact@dsp-avocats.fr.</p>
+    <h4>Directeur de la publication</h4>
+    <p>SELARL DSP Avocats, représentée par ses cogérants, Lucas Panicucci et Claire Delmasse Simoni.</p>
+    <h4>Hébergement</h4>
+    <p>Vercel Inc., 440 North Barranca Avenue, Suite 4133, Covina, Californie 91723, États-Unis. vercel.com.</p>
+    <h4>Confidentialité</h4>
+    <p>Le Registre fonctionne entièrement dans votre navigateur. Votre registre est enregistré uniquement dans le stockage local de votre appareil ; les fichiers de sauvegarde et d’agenda sont créés sur votre appareil. Rien n’est transmis au cabinet. Le site n’utilise ni cookie publicitaire ni outil de mesure d’audience. Le bouton « Effacer mes données » supprime tout. Sur un appareil partagé, pensez à l’utiliser.</p>
+    <p>Si vous écrivez au cabinet, les informations que vous transmettez sont traitées par la SELARL DSP Avocats pour répondre à votre demande. Elles sont couvertes par le secret professionnel de l’avocat. Vous pouvez demander à tout moment l’accès à vos données, leur rectification ou leur suppression, à contact@dsp-avocats.fr.</p>
+    <h4>Nature de l’outil</h4>
+    <p>Le Registre est un outil pédagogique de suivi. Les courriers proposés sont des modèles à adapter ; ils ne constituent pas une consultation juridique et ne remplacent pas l’analyse personnalisée d’un avocat. L’exemple d’Élise est fictif.</p>
+    <h4>Propriété intellectuelle</h4>
+    <p>Les textes, visuels et outils du site sont la propriété de la SELARL DSP Avocats. Toute reproduction sans autorisation est interdite.</p>
+  </details>
+</footer>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  var LIENS = { balance: "", sentinelle: "", stabilite: "" };   /* à renseigner au fil des mises en ligne */
+  var KEY = "revela-registre-v1";
+  function L(id) { return "https://www.legifrance.gouv.fr/codes/article_lc/" + id; }
+  /* Références vérifiées sur Légifrance le 10 octobre 2026 */
+  var R = {
+    c1103: ["Article 1103 du Code civil", L("LEGIARTI000032040777"), "Les contrats légalement formés tiennent lieu de loi à ceux qui les ont faits."],
+    c1344: ["Article 1344 du Code civil", L("LEGIARTI000032042162"), "Le débiteur est mis en demeure par une sommation ou un acte portant interpellation suffisante, ou, si le contrat le prévoit, par la seule exigibilité de l’obligation."],
+    c13441: ["Article 1344-1 du Code civil", L("LEGIARTI000032035273"), "La mise en demeure de payer une somme d’argent fait courir les intérêts au taux légal, sans que le créancier ait à justifier d’un préjudice."],
+    c1231: ["Article 1231 du Code civil", L("LEGIARTI000032041443"), "Sauf inexécution définitive, les dommages et intérêts ne sont dus que si le débiteur a d’abord été mis en demeure de s’exécuter dans un délai raisonnable."],
+    c1217: ["Article 1217 du Code civil", L("LEGIARTI000036829854"), "Face à une inexécution, on peut suspendre sa propre obligation, poursuivre l’exécution forcée, obtenir une réduction du prix, provoquer la résolution ou demander réparation."],
+    c1221: ["Article 1221 du Code civil", L("LEGIARTI000036829851"), "Après mise en demeure, le créancier peut poursuivre l’exécution en nature, sauf impossibilité ou disproportion manifeste."],
+    c1219: ["Article 1219 du Code civil", L("LEGIARTI000032041509"), "Une partie peut refuser d’exécuter son obligation si l’autre n’exécute pas la sienne et si cette inexécution est suffisamment grave."],
+    c1226: ["Article 1226 du Code civil", L("LEGIARTI000032041472"), "Le créancier peut, à ses risques et périls, résoudre le contrat par notification, après une mise en demeure restée sans effet qui l’annonçait expressément."],
+    c12315: ["Article 1231-5 du Code civil", L("LEGIARTI000032010131"), "La pénalité prévue en cas d’inexécution n’est encourue, sauf inexécution définitive, qu’après mise en demeure ; le juge peut la modérer si elle est manifestement excessive."],
+    l1113: ["Article L. 111-3 du Code des procédures civiles d’exécution", L("LEGIARTI000053936502"), "Sont notamment des titres exécutoires les accords homologués par le juge, et les transactions ou accords issus d’une médiation contresignés par les avocats de chacune des parties et revêtus de la formule exécutoire."],
+    l1114: ["Article L. 111-4 du Code des procédures civiles d’exécution", L("LEGIARTI000025025648"), "L’exécution d’un titre exécutoire judiciaire peut être poursuivie pendant dix ans."],
+    p1405: ["Article 1405 du Code de procédure civile", L("LEGIARTI000006412552"), "Le recouvrement d’une créance d’origine contractuelle et d’un montant déterminé peut être demandé par la procédure d’injonction de payer."],
+    p1543: ["Article 1543 du Code de procédure civile", L("LEGIARTI000051930495"), "Une transaction ou un accord issu d’une conciliation, d’une médiation ou d’une procédure participative peut être homologué par le juge pour recevoir force exécutoire."]
+  };
+  var EXEC_INFO = {
+    oui: "Il a été homologué par un juge, ou contresigné par les avocats de chacun puis revêtu de la formule exécutoire par le greffe. En cas de manquement, un commissaire de justice pourra l’exécuter.",
+    non: "Un simple accord signé entre vous. Il vous engage, mais en cas de manquement, il faudra d’abord obtenir une décision de justice.",
+    nsp: "Regardez la dernière page : la formule exécutoire commence par « En conséquence, la République française mande et ordonne… ». Sans elle, ni jugement d’homologation, l’accord n’est pas exécutoire."
+  };
+
+  var DEMO = { titre: "Protocole d’accord, chantier de cuisine", date: "2026-12-02", moi: "Élise Ferrand", autre: "Marc Martin", lieu: "Nice", exec: "oui",
+    clause: "À défaut de paiement d’une échéance à sa date, la totalité des sommes restant dues deviendra immédiatement exigible.",
+    items: [
+      { id: "d1", qui: "moi", type: "faire", quoi: "Laisser l’accès au logement pour le retrait des caissons", montant: "", ech: "2026-12-12", recu: 0, etat: "fait", preuve: "", journal: [{ d: "2026-12-12", t: "Accès donné de 9 h à 12 h." }] },
+      { id: "d2", qui: "lui", type: "faire", quoi: "Retirer à ses frais les caissons non conformes", montant: "", ech: "2026-12-15", recu: 0, etat: "fait", preuve: "Photos du 12 décembre, SMS de confirmation", journal: [{ d: "2026-12-12", t: "Caissons retirés en ma présence." }] },
+      { id: "d3", qui: "lui", type: "argent", quoi: "Premier versement", montant: "1600", ech: "2026-12-15", recu: 800, etat: "", preuve: "Relevé bancaire du 16 décembre", journal: [{ d: "2026-12-16", t: "Virement reçu : 800 €." }, { d: "2026-12-17", t: "Courriel de relance envoyé, sans réponse." }] },
+      { id: "d4", qui: "lui", type: "argent", quoi: "Second versement", montant: "1600", ech: "2027-01-15", recu: 0, etat: "", preuve: "", journal: [] }
+    ], ltype: "med", ldelai: "8", lsel: ["d3"], demo: true, asof: "2026-12-20" };
+  function newItem() { return { id: "i" + Date.now().toString(36) + Math.random().toString(36).slice(2, 6), qui: "lui", type: "argent", quoi: "", montant: "", ech: "", recu: 0, etat: "", preuve: "", journal: [] }; }
+  function BLANK() { return { titre: "", date: "", moi: "", autre: "", lieu: "", exec: "", clause: "", items: [newItem()], ltype: "relance", ldelai: "8", lsel: [], demo: false }; }
+
+  var st = { p: BLANK(), screen: "intro" };
+  function load() { try { var r = localStorage.getItem(KEY); if (r) { var d = JSON.parse(r); if (d && typeof d === "object") { st.screen = d.screen || "intro"; st.p = Object.assign(BLANK(), d.p || {}); } } } catch (e) {} }
+  function save() { try { localStorage.setItem(KEY, JSON.stringify(st)); } catch (e) {} }
+  var $ = function (id) { return document.getElementById(id); };
+  function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+  var SCREENS = ["intro", "e1", "e2", "reg", "lettre"];
+  function show(n, keep) { SCREENS.forEach(function (x) { $("s-" + x).classList.toggle("on", x === n); }); if (!keep) { st.screen = n; save(); } window.scrollTo(0, 0); }
+  function go(n) { sync(); if (n === "reg") renderReg(); if (n === "lettre") renderLetter(); show(n); }
+  function toast(t) { var d = document.createElement("div"); d.className = "toast"; d.setAttribute("role", "status"); d.setAttribute("aria-live", "polite"); d.textContent = t; document.body.appendChild(d); setTimeout(function () { d.remove(); }, 2300); }
+  function num(v) { var n = parseFloat(String(v == null ? "" : v).replace(/\s/g, "").replace(",", ".")); return isFinite(n) ? n : 0; }
+  function eur(n) { return (Math.round(n * 100) / 100).toLocaleString("fr-FR", { maximumFractionDigits: 2 }) + " €"; }
+
+  /* ---------- Dates ---------- */
+  var MS = 86400000, MOIS = ["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"];
+  function D(y, m, d) { return new Date(Date.UTC(y, m, d)); }
+  function parse(v) { var p = (v || "").split("-"); if (p.length !== 3) return null; var d = D(+p[0], +p[1] - 1, +p[2]); return isNaN(d) ? null : d; }
+  function iso(d) { return d.toISOString().slice(0, 10); }
+  function now() { if (st.p.asof) return parse(st.p.asof); var n = new Date(); return D(n.getFullYear(), n.getMonth(), n.getDate()); }
+  function frd(v) { var d = typeof v === "string" ? parse(v) : v; return d ? (d.getUTCDate() === 1 ? "1er" : d.getUTCDate()) + " " + MOIS[d.getUTCMonth()] + " " + d.getUTCFullYear() : ""; }
+
+  /* ---------- État des engagements ---------- */
+  function status(it) {
+    var done, part, ech = parse(it.ech), t = now();
+    if (it.type === "argent") { var m = num(it.montant), r = num(it.recu); done = m > 0 && r >= m; part = r > 0 && !done; }
+    else { done = it.etat === "fait"; part = it.etat === "partiel"; }
+    var late = !done && ech && ech < t, soon = !done && !late && ech && (ech - t) / MS <= 7;
+    var cls = done ? "done" : late ? "late" : soon ? "soon" : "";
+    var lbl = done ? "Exécuté" : late ? (part ? "En partie, en retard" : "En retard") : part ? "En partie" : soon ? "Bientôt" : "À venir";
+    var days = ech ? Math.round((ech - t) / MS) : null;
+    return { done: done, part: part, late: late, soon: soon, cls: cls, lbl: lbl, days: days };
+  }
+  function sorted() { return st.p.items.slice().filter(function (x) { return x.quoi || x.ech; }).sort(function (a, b) { return (a.ech || "9999") < (b.ech || "9999") ? -1 : 1; }); }
+  function whoLbl(it) { var p = st.p; return it.qui === "moi" ? (p.moi ? p.moi + " (vous)" : "Vous") : (p.autre || "L’autre partie"); }
+
+  /* ---------- Saisie des engagements ---------- */
+  function renderEngs() {
+    $("engs").innerHTML = st.p.items.map(function (it, i) {
+      var arg = it.type === "argent";
+      return '<div class="eng" data-i="' + i + '"><div class="hd"><strong>Engagement ' + (i + 1) + '</strong><button class="del" data-del>Retirer</button></div>' +
+        '<div class="chips" style="margin-bottom:8px">' + [["lui", "L’autre partie s’engage"], ["moi", "Je m’engage"]].map(function (o) { return '<button class="chip s" data-e="qui" data-ev="' + o[0] + '" aria-pressed="' + (it.qui === o[0]) + '">' + o[1] + "</button>"; }).join("") +
+        [["argent", "à payer"], ["faire", "à faire"]].map(function (o) { return '<button class="chip s" data-e="type" data-ev="' + o[0] + '" aria-pressed="' + (it.type === o[0]) + '">' + o[1] + "</button>"; }).join("") + "</div>" +
+        '<input type="text" data-ef="quoi" value="' + esc(it.quoi) + '" placeholder="' + (arg ? "Par exemple : premier versement" : "Par exemple : retirer les caissons non conformes") + '" aria-label="Engagement" />' +
+        '<div class="row3">' + (arg ? '<label class="f" style="margin:0"><span>Montant (€)</span><input type="number" inputmode="decimal" min="0" step="10" data-ef="montant" value="' + esc(it.montant) + '" /></label>' : "") +
+        '<label class="f" style="margin:0"><span>Au plus tard le</span><input type="date" data-ef="ech" value="' + esc(it.ech) + '" /></label></div></div>';
+    }).join("");
+  }
+  $("engs").addEventListener("input", function (e) { var k = e.target.getAttribute("data-ef"); if (!k) return; st.p.items[+e.target.closest(".eng").getAttribute("data-i")][k] = e.target.value; st.p.demo = false; save(); });
+  $("btn-add").onclick = function () { if (st.p.items.length >= 20) { toast("Vingt engagements au plus."); return; } var it = newItem(); var last = st.p.items[st.p.items.length - 1]; if (last) { it.qui = last.qui; it.type = last.type; } st.p.items.push(it); save(); renderEngs(); };
+
+  /* ---------- Registre ---------- */
+  function renderReg() {
+    var p = st.p, items = sorted(), s = items.map(status), late = 0, done = 0;
+    s.forEach(function (x) { if (x.done) done++; if (x.late) late++; });
+    $("reg-title").textContent = p.titre || "Mon registre";
+    $("reg-meta").textContent = [p.date ? "Accord signé le " + frd(p.date) : "", p.moi && p.autre ? p.moi + " et " + p.autre : "", p.exec === "oui" ? "accord exécutoire" : p.exec === "non" ? "accord non exécutoire" : "", p.asof ? "exemple fictif, situation au " + frd(p.asof) : "situation au " + frd(now())].filter(Boolean).join(" · ");
+    $("sum").innerHTML = '<div><strong>' + items.length + '</strong><span>engagement' + (items.length > 1 ? "s" : "") + '</span></div><div><strong>' + done + '</strong><span>exécuté' + (done > 1 ? "s" : "") + '</span></div><div class="' + (late ? "late" : "") + '"><strong>' + late + '</strong><span>en retard</span></div>';
+    var mo = { lui: [0, 0], moi: [0, 0] }; items.forEach(function (it) { if (it.type === "argent") { mo[it.qui][0] += num(it.montant); mo[it.qui][1] += num(it.recu); } });
+    var mh = "";
+    [["lui", (p.autre || "L’autre partie") + " vous a versé", "reçu"], ["moi", "Vous avez versé", "payé"]].forEach(function (x) { var m = mo[x[0]]; if (m[0]) mh += '<p class="money">' + esc(x[1]) + " <strong>" + eur(m[1]) + "</strong> sur " + eur(m[0]) + '.</p><div class="meter"><i style="width:' + Math.min(100, Math.round(m[1] / m[0] * 100)) + '%"></i></div>'; });
+    $("money").innerHTML = mh;
+    var lateHis = items.filter(function (it, i) { return s[i].late && it.qui === "lui"; }), lateMine = items.filter(function (it, i) { return s[i].late && it.qui === "moi"; });
+    var ah = "";
+    if (lateHis.length) ah += '<div class="advice"><strong>' + lateHis.length + " engagement" + (lateHis.length > 1 ? "s" : "") + " de " + esc(p.autre || "l’autre partie") + " en retard.</strong> Commencez par une relance simple ; si elle reste sans effet, passez à la mise en demeure.</div>";
+    if (lateMine.length) ah += '<div class="advice"><strong>Vous avez ' + lateMine.length + " engagement" + (lateMine.length > 1 ? "s" : "") + " en retard.</strong> Prévenez l’autre partie par écrit et proposez une nouvelle date : votre propre retard peut affaiblir votre position.</div>";
+    $("alert").innerHTML = ah;
+    $("tl").innerHTML = items.length ? items.map(function (it, i) { return itemHtml(it, s[i]); }).join("") : '<p class="muted">Aucun engagement saisi.</p>';
+    renderSteps(); renderLaw();
+  }
+  function itemHtml(it, s) {
+    var arg = it.type === "argent", mine = it.qui === "moi", h = "";
+    h += '<div class="it ' + s.cls + '" data-id="' + esc(it.id) + '"><div class="top"><span class="badge ' + s.cls + '">' + s.lbl + '</span><span class="badge ' + (mine ? "me" : "") + '">' + esc(whoLbl(it)) + "</span>" + (it.ech ? '<span class="date">au plus tard le ' + frd(it.ech) + (s.done || s.days === null ? "" : s.days < 0 ? " · dépassé de " + (-s.days) + " jour" + (s.days < -1 ? "s" : "") : s.days === 0 ? " · aujourd’hui" : " · dans " + s.days + " jour" + (s.days > 1 ? "s" : "")) + "</span>" : "") + "</div>";
+    h += "<h3>" + esc(it.quoi || "Engagement") + (arg && num(it.montant) ? " · " + eur(num(it.montant)) : "") + "</h3>";
+    if (arg) {
+      h += '<p class="small" style="margin:0">' + (mine ? "Payé" : "Reçu") + " : <strong>" + eur(num(it.recu)) + "</strong>" + (num(it.montant) > num(it.recu) ? " · reste " + eur(num(it.montant) - num(it.recu)) : "") + "</p>";
+      if (!s.done) h += '<div class="pay no-print"><input type="number" inputmode="decimal" min="0" step="10" data-pamt placeholder="Montant" aria-label="Montant ' + (mine ? "payé" : "reçu") + '" /><input type="date" data-pdate value="' + iso(now()) + '" aria-label="Date" /><button class="btn sm ghost" data-pay>' + (mine ? "Noter un paiement" : "Noter un paiement reçu") + "</button></div>";
+    } else {
+      h += '<div class="chips no-print" style="margin-top:6px">' + [["fait", "Exécuté"], ["partiel", "En partie"], ["", "Pas encore"]].map(function (o) { return '<button class="chip s" data-st="' + o[0] + '" aria-pressed="' + ((it.etat || "") === o[0]) + '">' + o[1] + "</button>"; }).join("") + "</div>";
+    }
+    h += '<label class="f proof" style="margin:8px 0 0"><span class="small muted">Preuve</span><input type="text" data-proof value="' + esc(it.preuve) + '" placeholder="Relevé, photo, procès-verbal, courriel…" /></label>';
+    if (it.journal && it.journal.length) h += '<ul class="jr">' + it.journal.slice().sort(function (a, b) { return a.d < b.d ? -1 : 1; }).map(function (j) { return "<li><b>" + esc(frd(j.d)) + "</b>" + esc(j.t) + "</li>"; }).join("") + "</ul>";
+    h += '<div class="jadd no-print"><input type="text" data-jt placeholder="Ajouter une note datée d’aujourd’hui" aria-label="Note" /><button class="btn sm ghost" data-jadd>Noter</button></div>';
+    if (s.late && !mine) h += '<div class="act no-print"><button class="btn sm ghost" data-letter="relance">Préparer une relance</button><button class="btn sm main" data-letter="med">Préparer une mise en demeure</button></div>';
+    return h + "</div>";
+  }
+  function find(el) { var id = el.closest(".it").getAttribute("data-id"); return st.p.items.filter(function (x) { return x.id === id; })[0]; }
+  $("tl").addEventListener("click", function (e) {
+    var b = e.target.closest("button"); if (!b) return; var it = find(b); if (!it) return;
+    if (b.hasAttribute("data-pay")) {
+      var box = b.closest(".pay"), a = num(box.querySelector("[data-pamt]").value), d = box.querySelector("[data-pdate]").value || iso(now());
+      if (!(a > 0)) { toast("Indiquez le montant."); return; }
+      it.recu = num(it.recu) + a; it.journal.push({ d: d, t: (it.qui === "moi" ? "Paiement effectué : " : "Paiement reçu : ") + eur(a) + "." }); st.p.demo = false; save(); renderReg(); toast("Paiement noté.");
+    } else if (b.hasAttribute("data-st")) {
+      var v = b.getAttribute("data-st"); it.etat = v; it.journal.push({ d: iso(now()), t: v === "fait" ? "Marqué comme exécuté." : v === "partiel" ? "Marqué comme exécuté en partie." : "Marqué comme non exécuté." }); st.p.demo = false; save(); renderReg();
+    } else if (b.hasAttribute("data-jadd")) {
+      var inp = b.parentNode.querySelector("[data-jt]"), t = inp.value.trim(); if (!t) return; it.journal.push({ d: iso(now()), t: t }); st.p.demo = false; save(); renderReg();
+    } else if (b.hasAttribute("data-letter")) {
+      st.p.ltype = b.getAttribute("data-letter"); st.p.lsel = [it.id]; save(); go("lettre");
+    }
+  });
+  $("tl").addEventListener("change", function (e) { if (e.target.hasAttribute("data-proof")) { var it = find(e.target); it.preuve = e.target.value; st.p.demo = false; save(); } });
+  $("tl").addEventListener("keydown", function (e) { if (e.key === "Enter" && e.target.hasAttribute("data-jt")) { e.preventDefault(); e.target.parentNode.querySelector("[data-jadd]").click(); } });
+
+  function renderSteps() {
+    var p = st.p, ex = p.exec === "oui";
+    var s = [
+      "<strong>Gardez les traces.</strong> Notez chaque paiement, chaque échange, chaque constat dans ce registre, avec la preuve correspondante.",
+      "<strong>Relancez simplement.</strong> Un oubli ou une difficulté passagère est fréquent : une relance courtoise règle souvent tout.",
+      "<strong>Mettez en demeure</strong> par lettre recommandée avec avis de réception. C’est en principe le préalable aux dommages et intérêts et à l’exécution forcée ; pour une somme d’argent, elle fait courir les intérêts au taux légal. Une pénalité prévue par l’accord n’est en principe due qu’après elle.",
+      ex ? "<strong>Faites exécuter l’accord.</strong> Il constitue un titre exécutoire : un commissaire de justice peut procéder aux mesures d’exécution, comme une saisie, sans nouveau procès."
+         : "<strong>Obtenez un titre.</strong> Votre accord " + (p.exec === "non" ? "n’est pas" : "n’est peut-être pas") + " exécutoire. Pour une somme d’argent, l’injonction de payer est une voie simple et rapide ; pour le reste, il faut saisir le juge. Un accord issu d’une médiation ou d’une conciliation peut aussi être homologué.",
+      "<strong>Ne cessez pas d’exécuter vos propres engagements sans conseil.</strong> Suspendre les vôtres n’est permis que si le manquement de l’autre est suffisamment grave ; et « résoudre » l’accord vous ferait perdre ce qu’il vous apportait."
+    ];
+    $("steps").innerHTML = s.map(function (x) { return "<li>" + x + "</li>"; }).join("");
+  }
+  function renderLaw() {
+    var p = st.p, k = ["c1103", "c1344", "c13441", "c1231", "c1221"];
+    if (p.clause) k.push("c12315");
+    if (p.exec === "oui") k.push("l1113", "l1114"); else k.push("p1405", "p1543", "l1113");
+    k.push("c1217", "c1219", "c1226");
+    $("law").innerHTML = k.map(function (x) { var l = R[x]; return '<div class="law"><p>' + esc(l[2]) + '</p><a href="' + l[1] + '" target="_blank" rel="noopener">' + esc(l[0]) + ", sur Légifrance</a></div>"; }).join("") + '<p class="small muted" style="margin:10px 0 0">Références vérifiées sur Légifrance le 10 octobre 2026.</p>';
+    var links = [];
+    if (LIENS.sentinelle) links.push('<a href="' + LIENS.sentinelle + '">La Sentinelle</a> pour suivre les délais pour agir');
+    if (LIENS.stabilite) links.push('<a href="' + LIENS.stabilite + '">Le Bilan de stabilité</a> pour faire le point sur vous, une fois le conflit derrière vous');
+    $("links").innerHTML = links.length ? "Pour aller plus loin : " + links.join(" · ") + "." : ""; $("links").hidden = !links.length;
+  }
+
+  /* ---------- Courriers ---------- */
+  function constat(it) {
+    if (it.type === "argent") { var m = num(it.montant), r = num(it.recu); return r > 0 ? "je n’ai reçu à ce jour que " + eur(r) + ", soit un solde de " + eur(m - r) + " restant dû" : "je n’ai reçu à ce jour aucun paiement"; }
+    return it.etat === "partiel" ? "cet engagement n’a été exécuté qu’en partie" : "cet engagement n’a pas été exécuté";
+  }
+  function renderLetter() {
+    var p = st.p, items = sorted(), lateHis = items.filter(function (it) { var s = status(it); return it.qui === "lui" && !s.done; });
+    if (!p.lsel || !p.lsel.length) p.lsel = lateHis.filter(function (it) { return status(it).late; }).map(function (it) { return it.id; });
+    $("l-items").innerHTML = lateHis.length ? '<div class="chips">' + lateHis.map(function (it) { var s = status(it); return '<button class="chip s" data-ls="' + esc(it.id) + '" aria-pressed="' + (p.lsel.indexOf(it.id) >= 0) + '">' + esc(it.quoi || "Engagement") + (it.ech ? " · " + frd(it.ech) : "") + (s.late ? "" : " (pas encore échu)") + "</button>"; }).join("") + "</div>" : '<p class="small muted" style="margin:0">Aucun engagement de l’autre partie n’est en attente.</p>';
+    document.querySelectorAll(".chips[data-k]").forEach(function (g) { var k = g.getAttribute("data-k"); g.querySelectorAll(".chip").forEach(function (b) { b.setAttribute("aria-pressed", String(p[k] === b.getAttribute("data-v"))); }); });
+    var sel = items.filter(function (it) { return p.lsel.indexOf(it.id) >= 0; }), money = sel.some(function (it) { return it.type === "argent"; }), med = p.ltype === "med", dl = p.ldelai || "8";
+    var du = sel.reduce(function (a, it) { return a + (it.type === "argent" ? Math.max(0, num(it.montant) - num(it.recu)) : 0); }, 0);
+    var him = p.autre || "[nom de l’autre partie]", me = p.moi || "[votre nom]", acc = "notre accord" + (p.date ? " du " + frd(p.date) : "") ;
+    var lines = sel.map(function (it) { return "– " + (it.quoi || "engagement") + (it.type === "argent" && num(it.montant) ? " (" + eur(num(it.montant)) + ")" : "") + (it.ech ? ", au plus tard le " + frd(it.ech) : "") + " : " + constat(it) + "."; });
+    var t = "";
+    if (!sel.length) t = "Sélectionnez au moins un engagement ci-dessus.";
+    else if (!med) {
+      t = "Bonjour " + him + ",\n\nJe reviens vers vous au sujet de " + acc + ".\n\nSauf erreur de ma part, " + (sel.length > 1 ? "les engagements suivants n’ont pas encore été tenus" : "l’engagement suivant n’a pas encore été tenu") + " :\n" + lines.join("\n") +
+        "\n\nPourriez-vous me dire, d’ici " + dl + " jours, à quelle date vous comptez régulariser" + (money ? " le paiement" : "") + " ? Je préfère que nous réglions cela simplement, entre nous.\n\nCordialement,\n" + me;
+    } else {
+      t = me + "\n" + (p.lieu ? p.lieu + ", le " : "Le ") + frd(now()) + "\n\nÀ l’attention de " + him + "\nLettre recommandée avec demande d’avis de réception\n\nObjet : mise en demeure d’exécuter " + acc + "\n\nMadame, Monsieur,\n\n" +
+        "Par " + acc + (p.titre ? " (« " + p.titre + " »)" : "") + ", vous vous êtes engagé(e) à exécuter " + (sel.length > 1 ? "les obligations suivantes, aujourd’hui échues" : "l’obligation suivante, aujourd’hui échue") + " :\n" + lines.join("\n") + "\n\n" +
+        "En conséquence, je vous mets en demeure " + (money && du > 0 ? "de me régler la somme de " + eur(du) + " restant due" + (sel.some(function (it) { return it.type === "faire"; }) ? ", et d’exécuter les autres engagements rappelés ci-dessus," : "") : "d’exécuter " + (sel.length > 1 ? "les engagements rappelés" : "l’engagement rappelé") + " ci-dessus") + " dans un délai de " + dl + " jours à compter de la réception de la présente.\n\n" +
+        (p.clause ? "Je vous rappelle que notre accord prévoit, en cas de manquement : « " + p.clause.trim().replace(/\s*[.;]$/, "") + " ».\n\n" : "") +
+        "À défaut, je me réserve la possibilité, sans autre avis, " + (p.exec === "oui" ? "de faire procéder à l’exécution forcée de notre accord, qui constitue un titre exécutoire, par un commissaire de justice" : "de saisir la juridiction compétente afin d’obtenir l’exécution de notre accord et la réparation de mon préjudice") + (money ? ", et de réclamer les intérêts au taux légal, qui courent à compter de la présente mise en demeure" : "") + ".\n\n" +
+        "La présente lettre vaut mise en demeure au sens de l’article 1344 du Code civil.\n\nJe reste disposé(e) à trouver une solution amiable si vous me contactez dans ce délai.\n\n" + me;
+    }
+    $("letter").textContent = t;
+    $("l-info").textContent = med ? (p.exec === "oui" ? "Votre accord étant exécutoire, la mise en demeure n’est pas toujours exigée avant une saisie, mais elle laisse une dernière chance et fait courir les intérêts." : "Sans titre exécutoire, cette lettre prépare la suite : elle est en principe exigée avant de réclamer des dommages et intérêts ou l’exécution forcée, et fait courir les intérêts.") : "Une relance par courriel ou lettre simple suffit à ce stade. Gardez-en une copie.";
+    return t;
+  }
+  $("l-items").addEventListener("click", function (e) { var b = e.target.closest("[data-ls]"); if (!b) return; var a = st.p.lsel, id = b.getAttribute("data-ls"), i = a.indexOf(id); if (i >= 0) a.splice(i, 1); else a.push(id); save(); renderLetter(); });
+  $("btn-lcopy").onclick = function () { var t = renderLetter(); try { navigator.clipboard.writeText(t).then(function () { toast("Texte copié."); }, function () { toast("Copie impossible : sélectionnez le texte."); }); } catch (e) { toast("Copie impossible : sélectionnez le texte."); } };
+  $("btn-lprint").onclick = function () { window.print(); };
+
+  /* ---------- Agenda, sauvegarde ---------- */
+  function download(name, type, content) { try { var b = new Blob([content], { type: type }), a = document.createElement("a"); a.href = URL.createObjectURL(b); a.download = name; document.body.appendChild(a); a.click(); setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 500); } catch (e) { toast("Téléchargement impossible sur cet appareil."); } }
+  function icsEsc(s) { return String(s).replace(/\\/g, "\\\\").replace(/;/g, "\\;").replace(/,/g, "\\,").replace(/\n/g, "\\n"); }
+  $("btn-ics").onclick = function () {
+    var p = st.p, ev = sorted().filter(function (it) { return it.ech && !status(it).done; });
+    if (!ev.length) { toast("Aucune échéance à venir."); return; }
+    var stamp = new Date().toISOString().replace(/[-:]/g, "").replace(/\.\d+/, ""), out = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//DSP Avocats//Revela Registre//FR", "CALSCALE:GREGORIAN"];
+    ev.forEach(function (it) {
+      var d = parse(it.ech), n = new Date(d.getTime() + MS);
+      out.push("BEGIN:VEVENT", "UID:" + it.id + "@revela-registre", "DTSTAMP:" + stamp, "DTSTART;VALUE=DATE:" + it.ech.replace(/-/g, ""), "DTEND;VALUE=DATE:" + iso(n).replace(/-/g, ""),
+        "SUMMARY:" + icsEsc("Échéance : " + (it.quoi || "engagement") + " (" + whoLbl(it) + ")"), "DESCRIPTION:" + icsEsc((p.titre || "Accord") + (it.type === "argent" && num(it.montant) ? " – " + eur(num(it.montant)) : "") + ". Notez l’exécution dans Le Registre."),
+        "BEGIN:VALARM", "ACTION:DISPLAY", "DESCRIPTION:" + icsEsc("Demain : " + (it.quoi || "échéance")), "TRIGGER:-P1D", "END:VALARM", "END:VEVENT");
+    });
+    out.push("END:VCALENDAR"); download("registre-echeances.ics", "text/calendar;charset=utf-8", out.join("\r\n")); toast(ev.length + " échéance" + (ev.length > 1 ? "s" : "") + " exportée" + (ev.length > 1 ? "s" : "") + ".");
+  };
+  $("btn-save").onclick = function () { var d = { revela: "registre", version: 1, saved: new Date().toISOString(), p: st.p }; download("registre-" + iso(now()) + ".json", "application/json", JSON.stringify(d, null, 2)); };
+  $("in-import").addEventListener("change", function () {
+    var f = this.files && this.files[0]; if (!f) return; var rd = new FileReader();
+    rd.onload = function () { try { var d = JSON.parse(rd.result); if (!d || d.revela !== "registre" || !d.p || !Array.isArray(d.p.items)) throw 0; st.p = Object.assign(BLANK(), d.p); save(); toast("Registre importé."); go("reg"); } catch (e) { toast("Ce fichier n’est pas une sauvegarde du Registre."); } };
+    rd.readAsText(f); this.value = "";
+  });
+
+  /* ---------- Général ---------- */
+  function sync() {
+    var p = st.p;
+    document.querySelectorAll("[data-f]").forEach(function (el) { if (document.activeElement !== el) el.value = p[el.getAttribute("data-f")] || ""; });
+    document.querySelectorAll(".chips[data-k]").forEach(function (g) { var k = g.getAttribute("data-k"); g.querySelectorAll(".chip").forEach(function (b) { b.setAttribute("aria-pressed", String(p[k] === b.getAttribute("data-v"))); }); });
+    $("exec-info").textContent = EXEC_INFO[p.exec] || "";
+    renderEngs();
+  }
+  document.querySelectorAll("[data-f]").forEach(function (el) { el.addEventListener("input", function () { st.p[el.getAttribute("data-f")] = el.value; st.p.demo = false; save(); }); });
+  document.addEventListener("click", function (e) {
+    var b = e.target.closest(".chips[data-k] .chip");
+    if (b) { e.preventDefault(); var k = b.parentNode.getAttribute("data-k"); st.p[k] = st.p[k] === b.getAttribute("data-v") && k === "exec" ? "" : b.getAttribute("data-v"); if (k === "exec") st.p.demo = false; save(); sync(); if (k === "ltype" || k === "ldelai") renderLetter(); return; }
+    var c = e.target.closest("[data-e]");
+    if (c) { var it = st.p.items[+c.closest(".eng").getAttribute("data-i")]; it[c.getAttribute("data-e")] = c.getAttribute("data-ev"); st.p.demo = false; save(); renderEngs(); return; }
+    var d = e.target.closest("[data-del]");
+    if (d) { st.p.items.splice(+d.closest(".eng").getAttribute("data-i"), 1); if (!st.p.items.length) st.p.items.push(newItem()); save(); renderEngs(); }
+  });
+
+  document.querySelectorAll("[data-go]").forEach(function (b) { b.onclick = function () { go(b.getAttribute("data-go")); }; });
+  $("btn-reg").onclick = function () { if (!sorted().length) { toast("Saisissez au moins un engagement."); return; } go("reg"); };
+  $("btn-print").onclick = function () { window.print(); };
+  $("btn-start").onclick = function () { if (st.p.demo) st.p = BLANK(); go("e1"); };
+  $("btn-demo").onclick = function () { st.p = JSON.parse(JSON.stringify(DEMO)); save(); go("reg"); };
+  $("btn-last").onclick = function () { go("reg"); };
+  $("btn-erase").onclick = function () { if (!this.dataset.armed) { var self = this; self.dataset.armed = "1"; self.dataset.label = self.textContent; self.textContent = "Cliquez à nouveau pour tout effacer"; setTimeout(function () { if (self.dataset.armed) { delete self.dataset.armed; self.textContent = self.dataset.label; } }, 5000); return; } delete this.dataset.armed; setTimeout(function () { try { localStorage.removeItem(KEY); } catch (e) {} }, 0);
+     try { localStorage.removeItem(KEY); } catch (e) {} st = { p: BLANK(), screen: "intro" }; sync(); $("btn-last").hidden = true; show("intro"); this.textContent = "Données effacées"; };
+  function openMentions() { if (location.hash === "#mentions-legales") $("mentions-legales").open = true; }
+  window.addEventListener("hashchange", openMentions);
+  window.__registre = { status: status, letter: renderLetter };
+
+  load(); sync(); openMentions();
+  $("btn-last").hidden = !sorted().length || st.p.demo;
+  if (SCREENS.indexOf(st.screen) > 0) go(st.screen); else show("intro", true);
+})();
+</script>
+</body>
+</html>
